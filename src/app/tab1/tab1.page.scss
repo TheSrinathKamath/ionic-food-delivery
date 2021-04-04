@@ -1,0 +1,39 @@
+@import '../../theme/mixin.scss';
+
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+
+  .btn-order {
+    width: 100px;
+  }
+
+  .lbl-offer {
+    display: none;
+  }
+
+  .btn-offer {
+    width: 150px;
+  }
+
+  @include sm-lesser {
+    grid-template-areas: "offer""order";
+
+    .lbl-offer {
+      display: block;
+      grid-area: offer;
+      width: 100px;
+      font-size: small;
+      text-align: end;
+    }
+
+    .btn-offer {
+      display: none;
+    }
+
+    .btn-order {
+      grid-area: order;
+    }
+
+  }
+}

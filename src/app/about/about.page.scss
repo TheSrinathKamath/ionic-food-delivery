@@ -1,0 +1,26 @@
+.logo-container {
+  display: grid;
+  place-items: center;
+  height: 250px;
+  margin: auto;
+
+  .logo {
+    width: 132px;
+  }
+}
+
+.wrapper {
+  padding: 20px;
+}
+
+.btn-back-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+
+  .btn-back {
+    width: 100%;
+    color: white !important;
+  }
+}
