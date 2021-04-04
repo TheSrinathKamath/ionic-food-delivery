@@ -3,6 +3,9 @@
 ## Pre-requisites
 ```ionic```, ```capacitor```, ```angular cli```
 
+## Run project
+```ionic serve --host=your.req.ip.address```
+
 ## Project installation
 ```npm i```
 
