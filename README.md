@@ -1,4 +1,5 @@
 # Food Order App
+### App allows user to place order via WhatsApp.
 
 ## Pre-requisites
 ```ionic```, ```capacitor```, ```angular cli```
