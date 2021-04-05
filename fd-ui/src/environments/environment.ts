@@ -1,12 +1,11 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
-const IP = '127.0.0.1';
+const IP = '192.168.1.117';
 export const environment = {
   production: false,
-  products: `http://${IP}/_work/vfd/Server/listings`,
-  w_app_contact: '+91-8547153295',
-  call_inquiry: '+91-8547153295'
+  products: `http://${IP}/ionic-food-delivery/Server/listings`,
+  navContacts: `http://${IP}/ionic-food-delivery/Server/settings`,
 };
 
 /*

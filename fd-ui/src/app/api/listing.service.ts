@@ -19,4 +19,8 @@ export class ListingService {
     const params = new HttpParams().append('id', id);
     return this._http.get<ItemDetails>(`${environment.products}/get_item_details.php`, { params });
   }
+
+  getNavButtonContacts(){
+    return this._http.get(`${environment.navContacts}/get_nav_contacts.php`).toPromise();
+  }
 }
