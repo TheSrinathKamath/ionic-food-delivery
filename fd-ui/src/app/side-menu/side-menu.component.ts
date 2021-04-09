@@ -16,9 +16,9 @@ export class SideMenuComponent implements OnInit {
   async shareApp() {
     try {
       const response = await Share.share({
-        dialogTitle: "വിരുന്ന്‌ - രുചികരമായ ഭക്ഷണം നിങ്ങളുടെ അരികിൽ",
+        dialogTitle: "Share & Support വിരുന്ന്‌ App. Now available on Google PlayStore.",
         title: 'വിരുന്ന്‌ - A food delivery initiative by The Paravur Vadakkekara Service Co-operative Bank Ltd. No.3131',
-        text: 'Get healthy, homely food with വിരുന്ന്‌.',
+        text: 'വിരുന്ന്‌ - രുചികരമായ ഭക്ഷണം നിങ്ങളുടെ അരികിൽ. Get healthy, homely food with വിരുന്ന്‌. A food delivery initiative by The Paravur Vadakkekara Service Co-operative Bank Ltd. No.3131',
       })
     } catch (error) {
       console.log(error)

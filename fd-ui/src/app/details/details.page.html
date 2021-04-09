@@ -26,10 +26,11 @@
       <ion-label>Min. Order Quantity : {{item.min_order_qty}}</ion-label>
       <hr>
       <div class="btn-container">
-        <ion-button color="dark" fill="outline" size="small"
+        <ion-button *ngIf="item.is_active" color="dark" fill="outline" size="small"
           href="whatsapp://send?phone={{item.w_app_order_contact}}&text=I want to place an order for {{item.name}}">
           ORDER NOW</ion-button>
-
+        <ion-button *ngIf="!item.is_active" class="btn-order" color="dark" fill="outline" size="small">
+          OUT OF STOCK </ion-button>
         <ion-button color="dark" fill="outline" size="small" href="tel:{{item.call_order_contact}}">
           INQUIRY </ion-button>
       </div>

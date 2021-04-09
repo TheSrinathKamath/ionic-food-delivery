@@ -1,7 +1,7 @@
-const IP = '192.168.1.117';
+const IP = 'virunnu.snmfi.in';
 
 export const environment = {
   production: true,
-  products: `http://makerspot.000webhostapp.com/fd-server/listings`,
-  navContacts: `http://${IP}/ionic-food-delivery/Server/settings`,
+  products: `http://${IP}/Server/listings`,
+  navContacts: `http://${IP}/Server/settings`,
 };
